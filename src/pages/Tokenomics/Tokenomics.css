@@ -1,0 +1,408 @@
+.tokenomics-page {
+    background: url(../../assets/images/light-shape3.png) right/130% no-repeat;
+    color: black;
+    width: 100%;
+    /* height: 2000px; */
+    align-items: left;
+    justify-content: left;
+    height: 250vh;
+    display: block;
+    padding: 70px 0 18px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
+    position: relative;
+}
+
+
+
+.tokenomics-chart-area h2 {
+    font-family: 'Super Comic', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    line-height: normal;
+    position: relative;
+    z-index: 9;
+    color: #FFF;
+    text-shadow: 4px 0 #252525;
+    animation: textglow2 2000ms linear infinite 2000ms;
+}
+
+body.dark-mode .tokenomics-chart-area h2 {
+    text-shadow: 4px 0 #a783f3;
+}
+
+.chart-img {
+    text-align: center;
+    margin-top: 43px;
+    position: relative;
+    z-index: 9;
+}
+
+.chart-img img {
+    margin: 0 auto;
+}
+
+.chart-counting {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    background: url(../../assets/images/chart-line.svg) no-repeat bottom center;
+    background-size: 100%;
+    padding-bottom: 37px;
+    margin-top: 48px;
+}
+
+.chart-count-item h4 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 168.75%;
+    margin-bottom: 0;
+}
+
+.chart-count-item p {
+    font-size: 18px;
+    line-height: 130.75%;
+}
+
+.chart-count-item p:last-child {
+    margin-bottom: 0;
+}
+
+.floating-cloud1 {
+    position: absolute;
+    left: 50px;
+    top: 320px;
+    -webkit-animation: 13s floatcloud1 infinite;
+    animation: 13s floatcloud1 infinite;
+}
+
+@keyframes floatcloud1 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(3rem) translateY(1rem);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.floating-cloud2 {
+    position: absolute;
+    right: 10px;
+    top: 110px;
+    -webkit-animation: 15s floatcloud2 infinite;
+    animation: 15s floatcloud2 infinite;
+}
+
+@keyframes floatcloud2 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-4rem) translateY(1rem);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+
+.roadmap-heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.roadmap-area {
+    padding-top: 100px;
+}
+
+.roadmap-area h2 {
+    color: #252525;
+    font-size: 48px;
+    line-height: normal;
+    text-shadow: 4px 0 #B57900;
+    animation: textglow2 2000ms linear infinite 2000ms;
+    font-family: 'Super Comic', sans-serif;
+}
+
+@keyframes textglow2 {
+    40% {
+        text-shadow: 0 0 0 #fff;
+    }
+}
+
+body.dark-mode .roadmap-area h2 {
+    color: #FDAC05;
+    text-shadow: 4px 0 #ffffff;
+}
+
+.custom-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.custom-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-top: var(--bs-gutter-y);
+}
+
+.custom-grid {
+    width: 20%;
+    flex: 0 0 auto;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-part,
+.custom-grid:nth-child(even) .road-phase-head-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-part {
+    margin-top: 15px;
+}
+
+.roadmap-heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.road-btn-group .btn-skew1 {
+    clip-path: polygon(6% 18%, 90% 5%, 90% 90%, 0% 90%);
+    margin-left: 8px;
+}
+
+.road-phase-area {
+    position: relative;
+    max-width: 1004px;
+    margin: 0 auto;
+}
+
+.road-phase-area:after {
+    content: '';
+    position: absolute;
+    left: -70px;
+    top: 43%;
+    transform: translateY(-50%);
+    background: url(../../assets/images/wave-img.svg) no-repeat center;
+    background-size: cover;
+    width: 1160px;
+    height: 94px;
+}
+
+.road-each-phase-heading {
+    min-height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #F9D609;
+    position: relative;
+    border-radius: 18px;
+    max-width: 173px;
+    margin: 0 auto;
+    z-index: 9;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Super Comic', sans-serif;
+}
+
+.custom-grid:nth-child(2) .road-each-phase-heading,
+.custom-grid:nth-child(5) .road-each-phase-heading {
+    background: #EE9221;
+}
+
+.custom-grid:nth-child(3) .road-each-phase-heading {
+    background: linear-gradient(90deg, #73B24F 1%, #8EBB47 37%, #A5C340 76%, #ADC63E 100%);
+}
+
+.road-each-phase-heading h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Super Comic', sans-serif;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-heading h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.road-each-phase-heading:before {
+    content: '';
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    background: #FFC303;
+    border-radius: 40px 40px 0 0;
+    left: 20px;
+}
+
+.road-each-phase-heading:after {
+    content: '';
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    background: #FFC303;
+    border-radius: 40px 40px 0 0;
+    right: 20px;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-heading:before,
+.custom-grid:nth-child(even) .road-each-phase-heading:after {
+    top: auto;
+    bottom: -10px;
+    border-radius: 0 0 40px 40px;
+}
+
+.custom-grid:nth-child(2) .road-each-phase-heading:before,
+.custom-grid:nth-child(2) .road-each-phase-heading:after,
+.custom-grid:nth-child(5) .road-each-phase-heading:before,
+.custom-grid:nth-child(5) .road-each-phase-heading:after {
+    background: #EE9221;
+}
+
+.custom-grid:nth-child(3) .road-each-phase-heading:before,
+.custom-grid:nth-child(3) .road-each-phase-heading:after {
+    background: #619344;
+}
+
+.road-phase-body-wrap {
+    min-height: 282px;
+    font-size: 14px;
+}
+
+.road-phase-body-wrap .static-check {
+    position: relative;
+}
+
+.road-phase-body-wrap .static-check+.static-check {
+    margin-top: 18px;
+}
+
+.custom-check-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    background-color: #3F335B;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.custom-check-box.customchecked {
+    background-image: url(../../assets/images/check-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.custom-check-label {
+    padding-left: 20px;
+}
+
+.custom-grid:nth-child(odd) .road-phase-body-wrap {
+    margin-top: 120px;
+}
+
+.phase-shape {
+    position: absolute;
+    top: -10px;
+    font-size: 16px;
+    background: #fff;
+    min-width: 119px;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 8px;
+    color: #FFC303;
+    font-weight: 700;
+}
+
+.custom-grid:nth-child(even) .phase-shape {
+    top: auto;
+    bottom: -10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.custom-grid:nth-child(2) .phase-shape,
+.custom-grid:nth-child(5) .phase-shape {
+    color: #9D4D05;
+}
+
+.custom-grid:nth-child(3) .phase-shape {
+    color: #74B24F;
+}
+
+
+.road-each-phase-heading-img {
+    position: relative;
+}
+
+.road-each-phase-heading-img:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -28px;
+    background: url(../../assets/images/tri-shape1.svg) no-repeat center;
+    width: 31px;
+    height: 27px;
+    margin: 0 auto;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-heading-img:before {
+    bottom: -5px;
+    top: auto;
+}
+
+.custom-grid:nth-child(2) .road-each-phase-heading-img:before {
+    background: url(../../assets/images/tri-shape2.svg) no-repeat center;
+}
+
+.custom-grid:nth-child(3) .road-each-phase-heading-img:before {
+    background: url(../../assets/images/tri-shape3.svg) no-repeat center;
+}
+
+.custom-grid:nth-child(4) .road-each-phase-heading-img:before {
+    background: url(../../assets/images/tri-shape4.svg) no-repeat center;
+}
+
+.custom-grid:nth-child(5) .road-each-phase-heading-img:before {
+    background: url(../../assets/images/tri-shape2.svg) no-repeat center;
+    transform: rotate(180deg);
+}
+
+.road-each-phase-heading-img img {
+    margin: 24px auto 0 auto;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-heading-img img {
+    margin: 0 auto 24px auto;
+}
+
+/*================== Tokenomics-chart-roadmap End ======================*/
