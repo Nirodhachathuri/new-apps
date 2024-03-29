@@ -1,13 +1,11 @@
 
 import './App.css';
 import './styles/fonts.css'
-import { Link, Route,Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import RoadMap from './pages/RoadMap/RoadMap';
 import Tokenomics from './pages/Tokenomics/Tokenomics';
-import Contact from './pages/Contact/Contact';
 import Header from './pages/Header/Header';
 import React from 'react';
 
